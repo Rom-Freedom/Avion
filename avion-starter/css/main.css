@@ -1,3 +1,26 @@
 @import url(./normalize.css);
 @import url(./settings.css);
 @import url(./blocks/_btn.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
+::selection {
+    background-color: purple;
+    color: plum;
+}
