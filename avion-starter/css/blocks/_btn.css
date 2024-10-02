@@ -1,3 +1,14 @@
 .btn {
-    color: springgreen;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: var(--main-trs);
+}
+
+.btn__theme-dark {
+    color: var(--white);
+    background-color:  #F9F9F926;
 }
