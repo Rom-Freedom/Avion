@@ -43,16 +43,56 @@
     font-weight: 400;
     font-size: 16px;
     color: #726e8d;
+    transition: var(--main-trs);
+}
+
+.header__link:focus {
+    outline: none;
+}
+.header__link:focus-visible {
+    outline: var(--outline);
+    outline-offset: var(outline-offset);
+}
+
+@media (any-hover: hover) {
+    .header__link:hover {
+        color: var(--primary);
+    }
+}
+
+.header__link:active {
+    color: var(--dark-primary);
 }
 
 .header__buttons {
     display: flex;
     align-items: center;
     gap: 16px;
+    cursor: pointer;
 }
 
 .header__button {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;   
+}
+
+
+.nav__link:focus {
+    outline: none;
+}
+.nav__link:focus-visible {
+    outline: var(--outline);
+    outline-offset: var(outline-offset);
+}
+
+@media (any-hover: hover) {
+    .nav__link:hover {
+        color: var(--primary);
+    }
+}
+
+.nav__link:active {
+    color: var(--dark-primary);
 }

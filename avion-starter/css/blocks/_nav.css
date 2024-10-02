@@ -9,3 +9,21 @@
     font-weight: 400;
     color: #726e8d;
 }
+
+.nav__link:focus {
+    outline: none;
+}
+.nav__link:focus-visible {
+    outline: var(--outline);
+    outline-offset: var(outline-offset);
+}
+
+@media (any-hover: hover) {
+    .nav__link:hover {
+        color: var(--primary);
+    }
+}
+
+.nav__link:active {
+    color: var(--dark-primary);
+}
